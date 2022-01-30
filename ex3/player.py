@@ -1,4 +1,4 @@
-from ex3.available_actions import NOTHING_ACTION
+from ex3.available_actions import NOTHING_ACTION,ROCK_ACTION,PAPER_ACTION,SCISSORS_ACTION
 
 
 class Player:
@@ -11,3 +11,4 @@ class Player:
 
     def __repr__(self):
         return f'{self.name}:{self.action}'
+

@@ -1,3 +1,4 @@
+from data import EMPLOYEES, DEPARTMENTS
 def cross_join(employees, departments):
     """
     Реализует декартово произведение списков employees и departments
@@ -6,5 +7,8 @@ def cross_join(employees, departments):
     :param departments: Список DepartmentName таблицы Department
     :return: Генератор пар (LastName, DepartmentName)
     """
-    # put your code here
-    pass
+    for employe in employees:
+        for department in departments:
+            yield (employe, department)
+
+    
