@@ -1,4 +1,4 @@
-from data import EMPLOYEES, DEPARTMENTS
+﻿
 def cross_join(employees, departments):
     """
     Реализует декартово произведение списков employees и departments

@@ -3,7 +3,6 @@ from unittest.mock import patch
 
 from ex2 import fetch_page, CALL_COUNT
 
-
 @patch('ex2.fetcher.get')
 class TestFetchPage(TestCase):
     def test_argument(self, fetcher_mock):
