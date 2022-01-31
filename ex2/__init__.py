@@ -1,4 +1,4 @@
-﻿from fetcher import get
+﻿import fetcher
 CALL_COUNT = 10
 
 
