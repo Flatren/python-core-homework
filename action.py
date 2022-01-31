@@ -13,6 +13,8 @@ class BaseAction:
         gt_result = gt_result or self.name == 'Rock' and other.name == 'Scissors'
         gt_result = gt_result or self.name == 'Scissors' and other.name == 'Paper'
         return gt_result
+    def __hash__(self):
+        return hash(self.name)
     
 class NothingAction(BaseAction):
     def __init__(self):
